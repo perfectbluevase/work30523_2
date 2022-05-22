@@ -7,7 +7,7 @@
   <!--このあと application_controllerにデータとして保存する許可を記述-->
   <div class="field">
   <%= f.label :name %><br>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
   </div>
 
   <div class="field">

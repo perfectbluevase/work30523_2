@@ -5,12 +5,12 @@ class ApplicationController < ActionController::Base
   
   #サインイン後の遷移先
   def after_sign_in_path_for(resource)
-    about_path
+    user_path(resource)
   end
   
   #サインアウト後の遷移先
   def after_sign_out_path_for(resource)
-    about_path
+    root_path
   end
 
   protected
